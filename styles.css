@@ -1,0 +1,486 @@
+/*import fonts*/
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('SourceSansPro-Regular.otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('SourceSansPro-Light.otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('SourceSansPro-It.otf');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('SourceSansPro-Black.otf');
+    font-weight: 900;
+    
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('SourceSansPro-Semibold.otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('SourceSansPro-Bold.otf');
+    font-weight: 700;
+}
+
+.sonsie-one-regular {
+    font-family: "Sonsie One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+ 
+* {
+    margin: 0;
+    font-family: 'SourceSansPro';
+    padding: 0;
+  
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #C271FF;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #C271FF;
+}
+
+
+
+
+header{
+    position: absolute;  
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:680px;
+    margin-left: 125px;
+    height: 100px;
+}
+
+nav ul li{
+   display: inline-block;
+   padding:15px
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 32px; 
+    font-family: 'sonsie One';
+}
+
+.logo span{
+    color: #C271FF;
+    font-family: 'sonsie One';
+}
+
+nav ul li a{
+ 
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+li a:hover,li a:active {
+    color: #C271FF;
+   
+  }
+
+ 
+
+#hero{
+    height: 730px;
+   background: url('images/background.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+    border: 1px solid #979797;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    /* background-position: center; */
+}
+
+h1{
+    font-size: 120px;
+    font-weight: 700;
+    color: white;
+}
+#hero p{
+    color: white;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+#hero p b{
+    color: #C271FF;
+}
+
+button{
+    width:162px ;
+    height: 44px;
+    color: white;
+    background-color: #C271FF;
+    border: none;
+    border-radius: 22px;
+    margin-top: 40px;
+    margin-bottom: 65px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:active{
+    opacity: 0.9;
+}
+button:hover{
+    opacity: 0.9;
+}
+
+button a{
+   
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+padding-top:30px;
+padding-bottom: 50px;
+text-align: center;
+}
+
+
+ /* testimonial Section */
+
+#testimonial{
+    background-color: #C271FF;
+    height: 392px;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 22px;
+ }
+
+ #testimonial img {
+padding-left: 130%;
+
+ }
+
+ #text{
+    height: 158px;
+    width: 730px;
+    align-items: center;
+    
+ }
+
+ #text h3 {
+    font-size: 22px;
+    font-weight: 700;
+ }
+
+ #text p{
+    font-size: 22px;
+    font-style:italic;
+ }
+
+ #blockquote{
+     margin-inline-start: 0;
+     padding-bottom: 22px;
+     margin-block-start: 0;
+     font-size: 22px;
+     font-weight: 400;
+ }
+
+ /* Facilities Section */
+#facilities{
+    height: 485px;
+    background-color: #fff;
+    /* width: 100%; */
+    color: #071629;
+    text-align: center;
+
+}
+
+.facilities-grid{
+display: flex;
+flex-direction: row;
+align-items:center;
+justify-content: center;
+align-content: center;
+}
+
+.facility p{
+   
+    opacity: 50.16%;
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 10px;
+    width: 300px;
+
+}
+
+.facility h3{
+    padding-top: 15px;
+}
+
+.facility img{
+    width: 150px;
+    height: 150px;
+    transition: box-shadow 0.3s ease;
+    border-radius: 100px;
+}
+
+.facility img:hover{
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+
+/* membership-plans Section */
+#membership-plans{
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 620px;
+    background-color: #071629;
+    /* color: white; */
+    background: url("images/gym2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.membership-plans h2{
+    font-weight: 300;
+    padding-bottom: 0;
+    color:white;
+}
+
+.membership-plans h2 b{
+   color: #C271FF; 
+   font-weight: 700;
+   
+} 
+
+  .membership-plans {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #C271FF;
+    backdrop-filter: blur(10px);
+    /* border: 0.3px solid white; */
+  }
+  .plans-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .plan {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  .plan h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .plan p{
+    color:#C271FF;
+  }
+
+  .plan li {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+ /* Services Section */
+
+ #services{
+ height: 624px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ }
+
+
+ .service{
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    align-items: center;
+    color: #071629; 
+   justify-content: center;
+
+ }
+.services-grid{
+  
+    padding: 20px;
+} 
+
+.services-grid h3{
+
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 13px;
+    font-weight: 700;
+}
+
+.services-grid p{
+    font-size: 14px;
+    width: 242px;
+    height: 48px;
+    padding-left: 13px;
+    font-weight: 400;
+    opacity: 50.16%;
+
+}
+
+.image img{
+    width: 255px;
+    height: 155px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+    display: flex;
+    padding-top: 13px;
+    padding-left: 13px;
+
+
+}
+.avatar h4{
+
+    color: #C271FF;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 13px;
+    padding-top: 8px;
+}
+
+.avatar img{
+    width: 30px;
+    height: 30px;
+   
+}
+
+
+.rating{
+
+    width: 130px;
+}
+.rating img{
+width: 107px;
+height:  15px;
+padding-left: 13px;
+padding-top: 8px;
+}
+
+.time{
+    color: #C271FF;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 75%;
+   margin-top: -25px;
+}
+
+
+/* Membership Plans Section */
+footer{
+    /* clear: both; */
+    background-color:#071629 ;
+    color: white;
+    height: 249px;
+    /* position: sticky; */
+   
+}
+
+footer p{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 4%;
+    opacity: 35.17%;
+    font-weight: 400;
+
+}
+
+.footer_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+    gap:736px;
+   
+}
+
+.footer_content i{
+padding:20px;
+
+}
+
+@media (min-aspect-ratio:16/9){
+    .background-clip{
+      width: 100%;
+      height: auto;
+    }
+    }
+    
+    @media (max-aspect-ratio:16/9){
+      .background-clip{
+        width: auto;
+        height: 100%;
+        
+      }
+    }
+    
