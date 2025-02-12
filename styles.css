@@ -483,4 +483,23 @@ padding:20px;
         
       }
     }
+
+@media (max-width: 1000px) {
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:480px;
+    margin-left: 100px;
+    height: 100px;
+}
+
+nav ul li{
+   display: inline-block;
+   padding:10px
+}
+
+}
     
