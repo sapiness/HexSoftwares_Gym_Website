@@ -491,15 +491,33 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:480px;
+    gap:250px;
     margin-left: 100px;
     height: 100px;
 }
 
 nav ul li{
    display: inline-block;
-   padding:10px
+   padding:8px
 }
+
+    #text {
+        width:590px;
+    }
+
+    #testimonial img {
+    padding-left: 50%;
+}
+    .image img {
+    width: 225px;
+    }
+    .services-grid {
+    padding: 5px;
+}
+
+    .footer_content {
+gap: 550px;
+    }
 
 }
     
