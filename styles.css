@@ -519,5 +519,15 @@ nav ul li{
 gap: 550px;
     }
 
+    h1{
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+}
+#hero p{
+   
+    font-weight: 300;
+    font-size: 28px;
+}
 }
     
