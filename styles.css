@@ -72,47 +72,7 @@ html{
 
 
 
-.animate {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease-in-out;
-  }
-  .animate.scroll-anim {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
-.animate {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease-in-out;
-  }
-  .animate.scroll-anim {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  /* Add this CSS to animate all elements on scroll */
-  .animate {
-    animation: animate-scroll 1s ease-in-out forwards;
-    animation-delay: calc(0.1s * var(--i));
-  }
-  @keyframes animate-scroll {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
 header{
     position: absolute;  
@@ -148,9 +108,7 @@ width:100%;
 height: 100%;
 border-bottom: 3px solid #02b6ad;
 border-radius: 15px;
-transform: scale(0) translateY(50px);
-transition: .5s;
-opacity: 0;
+
 
 }
 
@@ -203,15 +161,10 @@ li a:hover,li a:active {
    background-size: cover;
    background-repeat: no-repeat;
     border: 1px solid #979797;
-/*     display: flex;
+    display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content: center; */
-   transform: translate(-50%,-50%);
-     width: 100%;
-     top: 50%;
-    left: 50%;
-    position: absolute;
+    justify-content: center;
      text-align: center;
 }
 
@@ -236,22 +189,6 @@ h1{
     font-size: 32px;
 }
 
-@keyframes text {
-    0%{
-       
-        margin-bottom: -40px;
-
-    }
-    30%{
-       letter-spacing: 20px;
-       margin-bottom: -40px;
-    }
-
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
-}
 #hero p b{
     color: #C271FF;
 }
@@ -319,32 +256,15 @@ padding-left: 130%;
     height: 158px;
     width: 730px;
     align-items: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    
+   
  }
 
  .text.show {
     opacity: 1;
   }
 
-  .text {
-    animation: fade-in-out 2s ;
-  }
-  @keyframes fade-in-out {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-  }
+ 
+
 
  #text h3 {
     font-size: 22px;
@@ -364,14 +284,7 @@ padding-left: 130%;
      font-weight: 400;
  }
 
- @keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+ 
  /* Facilities Section */
 #facilities{
     height: 485px;
@@ -389,14 +302,9 @@ align-items:center;
 justify-content: center;
 align-content: center;
  position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
+   
 }
-.facilities-grid.active{
-    transform: translateY(0px);
-    opacity: 1;
-}
+
 
 .facility p{
    
@@ -416,8 +324,7 @@ align-content: center;
     width: 150px;
     height: 150px;
     border-radius: 100px;
-     transition: transform ease-in-out;
-    transition-duration: 100;
+    
 }
 
 .facility img:hover{
@@ -441,23 +348,7 @@ align-content: center;
 
 }
 
-.membership-plans, .text{
-    animation: CSSscrollReveal ease-in-out both ;
-    animation-timeline: view();
-    animation-range: entry 50% cover 50%;
-  
-    
-}
-@keyframes CSSscrollReveal{
-    from{
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to{
-opacity: 1;
-transform: translateY(0);
-    }
-}
+
 
 .membership-plans h2{
     font-weight: 300;
