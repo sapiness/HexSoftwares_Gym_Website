@@ -13,29 +13,28 @@
    
 </head>
 <body>
- <!-- Move to up button -->
- 
 
     <header>
         <nav>
             <div class="logo">
                 <a href="index.html"><span>F</span>itness</a>
             </div>
-            <ul>
-            <li><a href="#hero">HOME</a></li>
-            <li><a href="#testimonial">TESTIMONIAL</a></li>
-            <li><a href="#facilities">FACILITIES</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#membership-plans">MEMBERSHIP PLANS</a></li>
-           
-            </ul>
+            <div class="links">
+           <a href="#hero">HOME<span></span></a>
+            <a href="#testimonial">TESTIMONIAL<span></span></a>
+            <a href="#facilities">FACILITIES<span></span></a>
+            <a href="#services">SERVICES<span></span></a>
+           <a href="#membership-plans">MEMBERSHIP PLANS<span></span></a>
+        </div>
         </nav>
         </header>
     <!-- Hero Section -->
     <section id="hero">
+         <div class="hero-content">
         <h1>Get Fit, Feel Great</h1>
         <p><b>Join</b> our gym today and start achieving your fitness goals</p>
         <button><a href="#membership-plans">Join Now</a></button>
+         </div>
     </section>
 
 
@@ -53,7 +52,7 @@
     <!-- Facilities Section -->
     <section id="facilities">
         <h2>Our Facilities</h2>
-        <div class="facilities-grid">
+        <div class="facilities-grid active">
             <div class="facility">
                 <img src="images/facility1.jpg" alt="Facility 1">
                 <h3>Cardio Equipment</h3>
@@ -210,20 +209,36 @@
     
     <footer>
         <section>
-            <div class="footer_content">
+              <div class="footer_content">
                 <div class="logo">
-                   <a href="index.html"><span>F</span>itness</a>
+                    <a href="#hero"><img src="images/logo.png"></a>
                 </div>
-                <div>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
+
+                <div class="icons">
+                <div class="icon facebook">
+                    <div class="tooltip">Facebook</div> 
+                    <span><i class="fa-brands fa-facebook" style="color: #C271FF"></i></span>
+                </div>
+
+                <div class="icon twitter">
+                    <div class="tooltip">Twitter</div>  
+                    <span><i class="fa-brands fa-twitter" style="color: #C271FF"></i> </span>
+                </div>
+
+                <div class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fa-brands fa-instagram" style="color: #C271FF"></i></span>
                 </div>
             </div>
+        </div>
             <p>©Fitness 2024</p>
         </section>
 
     </footer>
+ <!-- Move to up button -->
+    <button id="scroll-up-btn" class = "animated bounce"  title="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
     <script src="script.js"></script>
 </body>
 </html>
