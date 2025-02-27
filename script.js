@@ -39,7 +39,7 @@ window.onscroll = function() {
 
 }
 
-window.addEventListener("scroll",reveal);
+// window.addEventListener("scroll",reveal);
 
 
 // function reveal(){
