@@ -42,63 +42,63 @@ window.onscroll = function() {
 window.addEventListener("scroll",reveal);
 
 
-function reveal(){
+// function reveal(){
 
-  let reveals = document.querySelectorAll(".services-grid");
-  let reveals2 = document.querySelectorAll(".facilities-grid");
-  let reveals3 = document.querySelectorAll(".membership-plans");
+//   let reveals = document.querySelectorAll(".services-grid");
+//   let reveals2 = document.querySelectorAll(".facilities-grid");
+//   let reveals3 = document.querySelectorAll(".membership-plans");
 
-  for(var i = 0; i < reveals.length; i++){
-    let Windowheight = window.innerHeight;
-    let revealtop = reveals[i].getBoundingClientRect().top;
-    let revealpoint = 150;
+//   for(var i = 0; i < reveals.length; i++){
+//     let Windowheight = window.innerHeight;
+//     let revealtop = reveals[i].getBoundingClientRect().top;
+//     let revealpoint = 150;
 
-    if (revealtop < Windowheight - revealpoint){
-      reveals[i].classList.add("active")
-    }
-    else{
-      reveals[i].classList.remove("active")
-    }
-  }
+//     if (revealtop < Windowheight - revealpoint){
+//       reveals[i].classList.add("active")
+//     }
+//     else{
+//       reveals[i].classList.remove("active")
+//     }
+//   }
 
 
-  for(var i = 0; i < reveals2.length; i++){
-    let Windowheight = window.innerHeight;
-    let revealtop = reveals2[i].getBoundingClientRect().top;
-    let revealpoint = 150;
+//   for(var i = 0; i < reveals2.length; i++){
+//     let Windowheight = window.innerHeight;
+//     let revealtop = reveals2[i].getBoundingClientRect().top;
+//     let revealpoint = 150;
 
-    if (revealtop < Windowheight - revealpoint){
-      reveals2[i].classList.add("active")
-    }
-    else{
-      reveals2[i].classList.remove("active")
-    }
-  }
+//     if (revealtop < Windowheight - revealpoint){
+//       reveals2[i].classList.add("active")
+//     }
+//     else{
+//       reveals2[i].classList.remove("active")
+//     }
+//   }
 
 
   
-  for(var i = 0; i < reveals3.length; i++){
-    let Windowheight = window.innerHeight;
-    let revealtop = reveals3[i].getBoundingClientRect().top;
-    let revealpoint = 150;
+//   for(var i = 0; i < reveals3.length; i++){
+//     let Windowheight = window.innerHeight;
+//     let revealtop = reveals3[i].getBoundingClientRect().top;
+//     let revealpoint = 150;
 
-    if (revealtop < Windowheight - revealpoint){
-      reveals3[i].classList.add("active")
-    }
-    else{
-      reveals3[i].classList.remove("active")
-    }
-  }
-}
+//     if (revealtop < Windowheight - revealpoint){
+//       reveals3[i].classList.add("active")
+//     }
+//     else{
+//       reveals3[i].classList.remove("active")
+//     }
+//   }
+// }
 
-const fadeText = document.querySelector('.text');
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY;
-  const textPosition = fadeText.offsetTop;
-  const windowHeight = window.innerHeight;
-  if (scrollPosition + windowHeight / 2 >= textPosition) {
-    fadeText.classList.add('show');
-  } else {
-    fadeText.classList.remove('show');
-  }
-});
+// const fadeText = document.querySelector('.text');
+// window.addEventListener('scroll', () => {
+//   const scrollPosition = window.scrollY;
+//   const textPosition = fadeText.offsetTop;
+//   const windowHeight = window.innerHeight;
+//   if (scrollPosition + windowHeight / 2 >= textPosition) {
+//     fadeText.classList.add('show');
+//   } else {
+//     fadeText.classList.remove('show');
+//   }
+// });
